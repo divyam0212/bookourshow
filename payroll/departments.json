@@ -1,0 +1,42 @@
+[
+  {
+    "departmentId": 1,
+    "departmentName": "HR",
+    "departmentLocation": "CHENNAI"
+  },
+  {
+    "departmentId": 2,
+    "departmentName": "MARKETING",
+    "departmentLocation": "PUNE"
+  },
+  {
+    "departmentId": 3,
+    "departmentName": "ACCOUNTING",
+    "departmentLocation": "BANGALORE"
+  },
+  {
+    "departmentId": 4,
+    "departmentName": "R & D",
+    "departmentLocation": "KOLKATA"
+  },
+  {
+    "departmentId": 5,
+    "departmentName": "SALES",
+    "departmentLocation": "DELHI"
+  },
+  {
+    "departmentId": 6,
+    "departmentName": "PRODUCTION",
+    "departmentLocation": "HYDERABAD"
+  },
+  {
+    "departmentId": 7,
+    "departmentName": "DISTRIBUTION",
+    "departmentLocation": "MUMBAI"
+  },
+  {
+    "departmentId": 1,
+    "departmentName": "DEVELOPMENT",
+    "departmentLocation": "KOCHI"
+  }
+]

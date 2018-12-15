@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+function myAsyncFunction(url) {
+	  return new Promise((resolve, reject) => {
+	    const xhr = new XMLHttpRequest();
+	    xhr.open("GET", url);			/* .open(type,url) */
+	    xhr.onload = () => resolve(xhr.responseText);
+	    xhr.onerror = () => reject(xhr.statusText);
+	    xhr.send();
+	  });
+	}
+
+function getDepartmentData(){
+	myAsyncFunction("http://localhost:8085/payroll/departments.json").then(
+			(res)=>{
+				var department=JSON.parse(res);
+				var i=0;
+				var options="";
+				for(i=0;i<department.length;i++){
+					options+="<option value="+department[i]["departmentId"]+">"+department[i]["departmentName"]+"</option>";
+				}
+				$("#departmentList").html("<select name=department>"+options+"</select>");
+			},
+			(err)=>{
+				console.log("Error");
+			})
+}
+function getSkillsData(){
+	myAsyncFunction("http://localhost:8085/payroll/skills.json").then(
+			(res)=>{
+				var skills=JSON.parse(res);
+				var i=0;
+				var options="";
+				for(i=0;i<skills.length;i++){
+					options+="<option value="+skills[i]["skillId"]+">"+skills[i]["skillName"]+"</option>";
+				}
+				$("#skillList").html("<select name=skills>"+options+"</select>");
+			},
+			(err)=>{
+				console.log("Error");
+			})
+}
+getDepartmentData();
+getSkillsData();
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Select Departments:
+<div id=departmentList></div>
+Select Skills:
+<div id="skillList"></div>
+</body>
+</html>

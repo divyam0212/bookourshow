@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<employee>
+		<empno>1234</empno>
+		<empname>ABC</empname>
+		<empsalary>120000</empsalary>
+	
+		<department>
+			<deptno>10</deptno>
+			<deptname>HR</deptname>
+			<deptlocation>CHENNAI</deptlocation>
+		</department>
+		
+		<address>
+			<addressid>1</addressid>
+			<street>THORAIPAKKAM</street>
+			<city>CHENNAI</city>
+			<state>TAMILNADU</state>
+			<country>INDIA</country>
+		</address>
+		
+		<skills>
+			<skill>
+				<skillid>1</skillid>
+				<skillname>JAVA</skillname>
+			</skill>
+			
+			<skill>
+				<skillid>2</skillid>
+				<skillname>SPRING</skillname>
+			</skill>
+		</skills>
+	</employee>
+</employees>

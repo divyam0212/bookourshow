@@ -1,0 +1,30 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "JAVA"
+  },
+  {
+    "skillId": 2,
+    "skillName": "C"
+  },
+  {
+    "skillId": 3,
+    "skillName": "JAVASCRIPT"
+  },
+  {
+    "skillId": 4,
+    "skillName": "ANGULAR JS"
+  },
+  {
+    "skillId": 5,
+    "skillName": "PYTHON"
+  },
+  {
+    "skillId": 6,
+    "skillName": "JQUERY"
+  },
+  {
+    "skillId": 7,
+    "skillName": "HTML CSS"
+  }
+]
